@@ -197,7 +197,7 @@
         "com.unity.visualeffectgraph": "12.1.10",
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "14d41100afc6ac4c06fbb03c3230c294ad58291b"
+      "hash": "bf5517a59efb5af8e00cbe7197cc8dca8780349d"
     },
     "com.unity.plateautoolkit.maps": {
       "version": "https://github.com/unity-shimizu/PLATEAU-SDK-Maps-Toolkit-for-Unity.git",

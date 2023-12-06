@@ -17,7 +17,7 @@ namespace LobbyRelaySample.UI
             base.Start();
             var localUser = await GameManager.Instance.AwaitLocalUserInitialization();
             localUser.DisplayName.onChanged += SetText;
-
+            SetText(localUser.DisplayName.Value);
         }
 
         void SetText(string text)
