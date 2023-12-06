@@ -96,7 +96,11 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 5. 任意のプロジェクト名を入力しプロジェクトを作成します。
 <img width="600" alt="multiplay_sample_ugs_prpjectname" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_ugs_prpjectname.png">
 
-6. プロジェクトを作成したら。"Project ID"をコピーします。
+6. "Products"メニューを選び、"Vivox Text Chat"をLaunchします。
+<img width="600" alt="スクリーンショット 2023-12-04 16 22 17" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-CityRescueMultiPlay/assets/137732437/7322eb66-4cc0-4b36-921c-7b9035866abe">
+
+
+7. プロジェクトに戻り、"Project ID"をコピーします。
  <img width="600" alt="multiplay_sample_projectidcopy" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_projectidcopy.png">
 
 サンプルシーンを利用する前のUnity Gaming Servicesをセットアップ手順は以上です。<br/>
