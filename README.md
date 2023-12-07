@@ -188,7 +188,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 
 <img width="600" alt="miniature_sample_02_markerscan" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/assets/137732437/58a75f71-8f1b-4839-abb2-75c6425e8247">
 
-②入出可能なロビー一覧が表示されます。既にホストがルームを作成している場合はルームが表示されるので選択し、「自動参加」を押下してください。<br>
+②入出可能なロビー一覧が表示されます。既にホストがルームを作成している場合はルームが表示されるので選択し、「参加」を押下してください。<br>
 <img width="600" alt="multiplay_sample_memberjoin" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_memberjoin.png">
 
 ③同じルームに参加しているメンバーが表示されます。問題なければ「開始」ボタンを押下してください。
@@ -201,9 +201,10 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 # 3. サンプルシーンのカスタマイズ方法
 ## 3-1. PLATEAU都市モデルや配置物の変更
 
-シーンをカスタマイズし、PLATEAU都市モデルや配置物を変更したい場合は"Assets/Simulation.unity"をひらき、シーンを編集します。
+シーンをカスタマイズし、PLATEAU都市モデルや配置物を変更したい場合は"Assets"内のBuildingsシーンを開き、シーンを編集します。
 
-<img width="600" alt="multiplay_sample_customize_scene" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_customize_scene.png">
+
+![image](https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-CityRescueMultiPlay/assets/127069970/6bf454a0-a9f6-4877-99ae-b8a0f8627702)
 
 
 PLATEAU都市モデルを変更する場合はヒエラルキーの中の"CesiumGeoreference"の中にあるPLATEAU都市モデルを削除した上で、ご自身でインポートしたPLATEU都市モデルを同じ場所に配置してください。
