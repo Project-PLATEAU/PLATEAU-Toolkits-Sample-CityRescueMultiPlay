@@ -32,12 +32,11 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 ロビー機能やボイスチャットやテキストチャットなどマルチプレイに必要な機能が一サービスとして揃っているのでマルチプレイ機能をシンプルに開発できるサービスです。
 <br/>
 
-## 1-2. Toolkitsの利用機能
+## 1-2. 利用しているToolkitsの機能
 このサンプルシーンでは、PLATEAU SDK-Toolkits for Unityの以下の機能を活用しています。
-### Sandbox Toolkit
-- 人の配置
-- 車の配置
-- Propsの配置
+### Rendering Toolkit
+- Auto Texturing
+- 環境システム
 
 ### Maps Toolkit
 - Cesiumを使ったPLATEAUモデルの位置合わせ
@@ -54,14 +53,14 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 - Unity 2021.3.30
 
 ### Rendering Pipeline
-- URP
 - HDRP
-    - Built-in Rendering Pipelineでは動作しません。<br>
+    - Built-in Rendering Pipeline、URPでは動作しません。<br>
 
 ### その他
 - Unity Cloud アカウント, Unity Gaming Services
   - 本サンプルではUnityが公式に提供している「Unity Gaming Services」を使っています。
   - 本サンプルの利用では一定のデータ量を使用するまで無料で使うことができ、自動的に課金に移行されることはありません。
+※クレジットカードなど決済手段の登録は不要で機能をお試しいただけます。
 
 
 ## 2-2. Unity Gaming Servicesとは
@@ -126,7 +125,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 <img width="600" alt="multiplay_sample_ugs_servicesnewlink" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_ugs_servicesnewlink.png">
 
 
-5. "Create a Unity Project id"の中にプルダウンメニューが表示されますので、表示される候補の中から、上記で作成したプロジェクトを選択してください。<br/>
+5. "Create a Unity Project id"の中にプルダウンメニューが表示されますので、表示される候補の中から、2-3.で作成したプロジェクトを選択してください。<br/>
 これで作成されたUnity Cloud Projectと紐付けがされ、本サンプルシーンでマルチプレイヤー機能を使うことができます。
 <img width="600" alt="multiplay_sample_ugs_services_selectprj" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_ugs_services_selectprj.png">
    
