@@ -102,7 +102,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 7. プロジェクトに戻り、"Project ID"をコピーします。
  <img width="600" alt="multiplay_sample_projectidcopy" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_projectidcopy.png">
 
-サンプルシーンを利用する前のUnity Gaming Servicesをセットアップ手順は以上です。<br/>
+サンプルシーンを利用する前のUnity Gaming Servicesをセットアップする手順は以上です。<br/>
 
 
 
