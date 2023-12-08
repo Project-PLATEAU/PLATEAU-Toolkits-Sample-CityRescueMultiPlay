@@ -198,23 +198,6 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 <img width="600" alt="multiplay_sample_dialog1" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/assets/137732437/1828e0c1-7a8a-4b58-a6c5-8aad7d536c79">
 
 
-# 3. サンプルシーンのカスタマイズ方法
-## 3-1. PLATEAU都市モデルや配置物の変更
-
-シーンをカスタマイズし、PLATEAU都市モデルや配置物を変更したい場合は"Assets"内のBuildingsシーンを開き、シーンを編集します。
-
-
-![image](https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-CityRescueMultiPlay/assets/127069970/6bf454a0-a9f6-4877-99ae-b8a0f8627702)
-
-
-PLATEAU都市モデルを変更する場合はヒエラルキーの中の"CesiumGeoreference"の中にあるPLATEAU都市モデルを削除した上で、ご自身でインポートしたPLATEU都市モデルを同じ場所に配置してください。
-
-<img width="600" alt="multiplay_sample_customize_cesium" src="https://github.com/unity-takeuchi/PLATEAU-SDK-Toolkits-for-Unity-drafts/blob/main/SampleSceneReadmeImages/CityRescueMultiPlay/multiplay_sample_customize_cesium.png">
-
-> **Note**
-> PLATEAUの都市モデルのインポートはPLATEAU SDK for Unityを利用して行ってください。
-> （[都市モデルのインポート](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html)）
-> 本サンプルで使われているPLATEAUモデル位置合わせ機能はMaps Toolkitの機能です。（[PLATEAUモデル位置合わせ - Maps Toolkit](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/blob/main/maps_toolkit.md#1-plateau%E3%83%A2%E3%83%87%E3%83%AB%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B)）
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
