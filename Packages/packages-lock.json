@@ -186,7 +186,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.plateautoolkit": {
-      "version": "https://github.com/unity-shimizu/PLATEAU-SDK-Toolkits-for-Unity.git",
+      "version": "https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -197,16 +197,16 @@
         "com.unity.visualeffectgraph": "12.1.10",
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "bf5517a59efb5af8e00cbe7197cc8dca8780349d"
+      "hash": "e3eb7278eda18480412b9e7aead7dc5579c59940"
     },
     "com.unity.plateautoolkit.maps": {
-      "version": "https://github.com/unity-shimizu/PLATEAU-SDK-Maps-Toolkit-for-Unity.git",
+      "version": "https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.synesthesias.plateau-unity-sdk": "1.0.0"
       },
-      "hash": "dda13d9de14ae427ac86426ee0e064fd5e8ee043"
+      "hash": "182fe9fe6c6adf40263662675f5984a88db66a5e"
     },
     "com.unity.render-pipelines.core": {
       "version": "12.1.12",
