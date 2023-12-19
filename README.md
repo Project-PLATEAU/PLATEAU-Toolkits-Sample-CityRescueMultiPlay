@@ -1,11 +1,13 @@
 # City Rescue Multi Play
+<img width="1080" alt="cityrescue_kv" src="/Documentation~/Images/cityrescue_kv.png">
+
 ### PLATEAU-SDK-Toolkits-for-Unityを使ったサンプルアプリケーション
 
 PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーションの作成方法についてご紹介します。
 
 ### 更新履歴
 
-|  2023/12/13  |  City Rescue Multi Play　初回リリース|
+|  2023/12/22  |  City Rescue Multi Play　初回リリース|
 | :--- | :--- |
 
 
