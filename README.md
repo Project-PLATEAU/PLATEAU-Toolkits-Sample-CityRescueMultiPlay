@@ -7,7 +7,7 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 
 ### 更新履歴
 
-|  2023/12/22  |  City Rescue Multi Play　初回リリース|
+|  2023/12/25  |  City Rescue Multi Play　初回リリース|
 | :--- | :--- |
 
 
@@ -22,7 +22,7 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
     * [2-3. Unity Game Serviceを使うためのプロジェクトセットアップ](#2-3-Unity-Gaming-Servicesを使うためのプロジェクトセットアップ)
     * [2-4. サンプルシーンのビルド方法](#2-4-サンプルシーンのビルド方法)
     * [2-5. サンプルシーンの使い方](#2-5-サンプルシーンの使い方)
-
+- [3. サンプルシーンのカスタマイズ方法](#3-サンプルシーンのカスタマイズ方法)
 
  
 # 1. サンプルシーンの概要
@@ -198,6 +198,41 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 ④ローディング画面に遷移した後、ゲーム画面に遷移します。プレイヤーは飛んでいるドローンに変身します。
 <img width="600" alt="multiplay_sample_dialog1" src="/Documentation~/Images/multiplay_sample_dialog1.png">
 
+
+# 3. サンプルシーンのカスタマイズ方法
+## 3D都市モデルを差し替える方法
+このサンプルシーンでは、例として沼津市の3D都市モデルを配置しています。<br>
+PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域向けにサンプルシーンをカスタマイズすることができます。
+
+### シーンの構成
+このサンプルシーンでは、Githubのファイル容量の制約上、1シーン当たり100MBを超えないように地物の数を限定しています。<br>
+ランタイムで複数のサブシーンを重ねてロードすることで広域のモデル表示を実現しています。シーンファイルの構成は以下の通りです。<br>
+<img width="600" alt="multiplay_scene_structure" src="/Documentation~/Images/multiplay_scene_structure.png"> <br>
+1. Sample01＿Lobby：マルチプレイの準備、ロビー作成などを行うシーンです。
+2. FloodSimulation ：マルチプレイでロードされるゲームレベルです。その中には地形の航空写真と浸水領域モデルが配置されています。
+3. Buildings 1~5：1シーンあたり100MBを超えないように地物の数を限定しています。この5つのシーンをランライム中に重ねてロードしています。
+
+### サブシーン読み込みの無効化
+3D都市モデルを差し替えて利用される際、サブシーンの分割は不要のため、以下の手順でサブシーンの読み込みを無効化してください。<br>
+`Assets/Scripts/GameLobby/NGO/PlayerCam.cs` 
+を開き、112~115行目の以下のコードを削除してください。<br>
+<img width="600" alt="multiplay_sample_customize_playercam" src="/Documentation~/Images/multiplay_sample_customize_playercam.png"> <br>
+こちらのコードがサブシーンのロードを行う部分なので、削除するとサブシーンがロードされなくなります。
+
+### 3D都市モデルの配置
+FloodSimulationシーンを開き、PLATEAU SDK for Unityを用いて利用したいエリアの3D都市モデルを読み込みます。
+具体的な使い方は[PLATEAU SDK for Unityのマニュアル](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/)をご参照ください。
+
+読み込んだ3D都市モデルを図のようにCesiumGeoreferenceのチャイルドオブジェクトにします。<br>
+<img width="300" alt="multiplay_sample_customize_hierarchy" src="/Documentation~/Images/multiplay_sample_customize_hierarchy.png"> <br>
+
+Cesium Globe Anchorコンポーネントを追加します。<br>
+<img width="300" alt="multiplay_sample_customize_cga" src="/Documentation~/Images/multiplay_sample_customize_cga.png"> <br>
+
+Maps Toolkitを開き、配置した3D都市モデルをアタッチして「PLATEAUモデルの位置を合せる」を選択すると、3D都市モデルの位置が補正されます。<br>
+<img width="600" alt="multiplay_sample_customize_alignment" src="/Documentation~/Images/multiplay_sample_customize_alignment.png"> <br>
+
+Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
 
 
 # ライセンス
