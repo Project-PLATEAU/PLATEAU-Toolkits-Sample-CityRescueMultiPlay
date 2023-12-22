@@ -23,7 +23,9 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
     * [2-4. サンプルシーンのビルド方法](#2-4-サンプルシーンのビルド方法)
     * [2-5. サンプルシーンの使い方](#2-5-サンプルシーンの使い方)
 - [3. サンプルシーンのカスタマイズ方法](#3-サンプルシーンのカスタマイズ方法)
-
+    * [3-1. 3D都市モデルを差し替える方法](#3-1-3D都市モデルを差し替える方法)
+    * [3-2. 環境の設定変更](#3-2-環境の設定変更)
+    * [3-3. 夜間用テクスチャの設定方法](#3-3-夜間用テクスチャの設定方法)
  
 # 1. サンプルシーンの概要
 ## 1-1. 体験の概要
@@ -200,7 +202,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 
 
 # 3. サンプルシーンのカスタマイズ方法
-## 3D都市モデルを差し替える方法
+## 3-1. 3D都市モデルを差し替える方法
 このサンプルシーンでは、例として沼津市の3D都市モデルを配置しています。<br>
 PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域向けにサンプルシーンをカスタマイズすることができます。
 
@@ -233,6 +235,44 @@ Maps Toolkitを開き、配置した3D都市モデルをアタッチして「PLA
 <img width="600" alt="multiplay_sample_customize_alignment" src="/Documentation~/Images/multiplay_sample_customize_alignment.png"> <br>
 
 Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
+
+## 3-2. 環境の設定変更
+デフォルトでは晴れ・日中の環境に設定されています。<br>
+Rendering Toolkitの環境システムを利用することで天候条件や時間帯を変更することが出来ます。<br>
+メニューからPLATEAU>PLATEAU Toolkit>Rendering Toolkitを開いてください。<br>
+<img width="400" alt="multiplay_customize_renderingmenu" src="/Documentation~/Images/multiplay_customize_renderingmenu.png"> <br>
+
+Time of Dayの値を変更することで時間帯を変更出来ます。<br>
+<img width="600" alt="multiplay_customize_time_dawn" src="/Documentation~/Images/multiplay_customize_time_dawn.png"> 
+<img width="600" alt="multiplay_customize_time_noon" src="/Documentation~/Images/multiplay_customize_time_noon.png"> <br>
+
+Rain/Snow/Cloudy/Fog Color/FogDistanceの値を変更することで天気を調整出来ます。<br>
+<img width="600" alt="multiplay_customize_weather_fog" src="/Documentation~/Images/multiplay_customize_weather_fog.png"> 
+
+環境システムの各設定項目の内容や、具体的な操作方法は[Rendering ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
+
+## 3-3. 夜間用のテクスチャの設定方法
+3-2. 環境の設定変更で時間帯を夜間に設定すると、デフォルトの3D都市モデルでは建物に光源がないため、建物は真っ暗に表示されてしまいます。<br>
+<img width="600" alt="multiplay_customize_time_midnight" src="/Documentation~/Images/multiplay_customize_time_midnight.png"> <br>
+
+そのような場合には、Rendering ToolkitのAuto Texturing機能を使用することで、夜景を再現することが出来ます。<br>
+まず、Auto Textureを適用したい建物を選択します。<br>
+<img width="600" alt="multiplay_customize_select_a_bldg" src="/Documentation~/Images/multiplay_customize_select_a_bldg.png"> <br>
+
+Rendering Toolkitを開いて「テクスチャ生成」を選択すると夜景用のテクスチャが生成されます。<br>
+<img width="600" alt="multiplay_customize_autotexture" src="/Documentation~/Images/multiplay_customize_autotexture.png"> <br>
+
+ヒエラルキー内の全建物を一括選択して反映したい場合は、検索バーで「bldg t:MeshRenderer p(m_IsActive)=true」と検索すると一括でシーン内の建物を選択出来ます*。<br>
+<img width="600" alt="multiplay_customize_select_all_bldgs" src="/Documentation~/Images/multiplay_customize_select_all_bldgs.png"> <br>
+<img width="600" alt="multiplay_customize_select_all_bldgs_light" src="/Documentation~/Images/multiplay_customize_select_all_bldgs_light.png"> <br>
+
+*この検索にはUnity Editor上でのカスタム選択機能が必要となります。カスタム選択機能を使用するには メニュー > Edit > Preferences の SearchタブでSceneの項目をAdvancedに設定する必要があります。<br>
+<img width="600" alt="multiplay_customize_custom_search" src="/Documentation~/Images/multiplay_customize_custom_search.png"> 
+
+Auto Texture適用後、窓の明かりをOFFにしたい場合は対象となる建物を選択し、Rendering Toolkitを開いて「窓の表示の切り替え」を選択してください。<br>
+<img width="600" alt="multiplay_customize_select_a_bldg_dark" src="/Documentation~/Images/multiplay_customize_select_a_bldg_dark.png"> <br>
+
+設定方法の詳細については[Rendering ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
 
 
 # ライセンス
