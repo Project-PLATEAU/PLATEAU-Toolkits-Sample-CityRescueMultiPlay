@@ -1,40 +1,51 @@
 # City Rescue Multi Play
+### PLATEAU-SDK-Toolkits-for-Unityを使ったサンプルプロジェクト
 <img width="1080" alt="cityrescue_kv" src="/Documentation~/Images/cityrescue_kv.png">
 
-### PLATEAU-SDK-Toolkits-for-Unityを使ったサンプルアプリケーション
 
-PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーションの作成方法についてご紹介します。
 
 ### 更新履歴
 
-|  2023/12/22  |  City Rescue Multi Play　初回リリース|
+|  2023/12/25  |  City Rescue Multi Play　初回リリース|
 | :--- | :--- |
 
 
 # 目次
 
-- [1. サンプルシーンの概要](#1-サンプルシーンの概要)
-    * [1-1. 体験の概要](#1-1-体験の概要)
-    * [1-2. Toolkitsの利用機能](#1-2-Toolkitsの利用機能)
+- [1. サンプルプロジェクトの概要](#1-サンプルプロジェクトの概要)
+  - [1-1. サンプルプロジェクトで体験できること](#1-1-サンプルプロジェクトで体験できること)
+  - [1-2. Unityプロジェクト情報](#1-2-unityプロジェクト情報)
+  - [1-3. 利用している PLATEAU SDK-Toolkits の機能](#1-3-利用している-plateau-sdk-toolkits-の機能)
 - [2. 利用手順](#2-利用手順)
-    * [2-1. 必要環境](#2-1-必要環境)
+    * [2-1. 推奨環境](#2-1-推奨環境)
     * [2-2. Unity Gaming Servicesとは](#2-2-Unity-Gaming-Servicesとは)
     * [2-3. Unity Game Serviceを使うためのプロジェクトセットアップ](#2-3-Unity-Gaming-Servicesを使うためのプロジェクトセットアップ)
-    * [2-4. サンプルシーンのビルド方法](#2-4-サンプルシーンのビルド方法)
-    * [2-5. サンプルシーンの使い方](#2-5-サンプルシーンの使い方)
-
-
+    * [2-4. サンプルプロジェクトのビルド方法](#2-4-サンプルプロジェクトのビルド方法)
+    * [2-5. サンプルプロジェクトの使い方](#2-5-サンプルプロジェクトの使い方)
+- [3. サンプルプロジェクトのカスタマイズ方法](#3-サンプルプロジェクトのカスタマイズ方法)
+    * [3-1. 3D都市モデルを差し替える方法](#3-1-3D都市モデルを差し替える方法)
+    * [3-2. 環境の設定変更](#3-2-環境の設定変更)
+    * [3-3. 夜間用テクスチャの設定方法](#3-3-夜間用テクスチャの設定方法)
  
-# 1. サンプルシーンの概要
-## 1-1. 体験の概要
+# 1. サンプルプロジェクトの概要
+## 1-1. サンプルプロジェクトで体験できること
 複数人向けの災害シミュレータを例に取り、PLATEAUの3D都市モデルとマルチプレイ機能を組み合わせることで複数人で同時参加可能なアプリを構築する方法を紹介します。<br/>
-このサンプルシーンは、3D都市モデルのメタデータを参照して洪水のシミュレーションを行い、被害状況や避難計画などを複数人でプランニングする体験となっています。<br/>
-マルチプレイ機能の実装には様々な方法がありますが、このサンプルシーンでは例としてUnity Gaming Servicesを活用しています。<br/>
+このサンプルプロジェクトは、3D都市モデルのメタデータを参照して洪水のシミュレーションを行い、被害状況や避難計画などを複数人でプランニングする体験となっています。<br/>
+マルチプレイ機能の実装には様々な方法がありますが、このサンプルプロジェクトでは例としてUnity Gaming Servicesを活用しています。<br/>
 ロビー機能やボイスチャット、テキストチャットなどマルチプレイに必要な機能を簡単に実装することができます。
 <br/>
 
-## 1-2. 利用しているToolkitsの機能
-このサンプルシーンでは、PLATEAU SDK-Toolkits for Unityの以下の機能を活用しています。
+## 1-2. Unityプロジェクト情報
+### Unity Version
+- Unity 2021.3.30
+
+### Rendering Pipeline
+- HDRP
+
+※Built-in Rendering Pipeline、URPでは動作しません。<br>
+
+## 1-3. 利用している PLATEAU SDK-Toolkits の機能
+このサンプルプロジェクトでは、PLATEAU SDK-Toolkits for Unityの以下の機能を活用しています。
 ### Rendering Toolkit
 - Auto Texturing
 - 環境システム
@@ -45,17 +56,11 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 
   
 # 2. 利用手順
-## 2-1. 必要環境
+## 2-1. 推奨環境
 ### OS環境
+以下は本プロジェクトに使用した開発環境です。
 - Windows11
 - macOS Ventura 13.2
-
-### Unity Version
-- Unity 2021.3.30
-
-### Rendering Pipeline
-- HDRP
-    - Built-in Rendering Pipeline、URPでは動作しません。<br>
 
 ### その他
 - Unity Cloud アカウント, Unity Gaming Services
@@ -69,7 +74,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 詳細は以下のドキュメントをご参照ください。<br/>
 [Unity Gaming Services](https://unity.com/solutions/gaming-services)
 
-このサンプルシーンではUnity Gaming Servicesを用いて以下の機能を実装しています。<br/>
+このサンプルプロジェクトではUnity Gaming Servicesを用いて以下の機能を実装しています。<br/>
 - Lobby・ルーム機能
 - チャット・ボイスチャット機能
 
@@ -103,13 +108,13 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 7. プロジェクトに戻り、"Project ID"をコピーします。
  <img width="600" alt="multiplay_sample_projectidcopy" src="/Documentation~/Images/multiplay_sample_projectidcopy.png">
 
-サンプルシーンを利用する前のUnity Gaming Servicesをセットアップする手順は以上です。<br/>
+サンプルプロジェクトを利用する前のUnity Gaming Servicesをセットアップする手順は以上です。<br/>
 
 
 
-## 2-4. サンプルシーンのビルド方法
+## 2-4. サンプルプロジェクトのビルド方法
 
-ここからはUnity Editorでサンプルシーンのファイルを開いてアプリケーションのビルドを行います。
+ここからはUnity Editorでサンプルプロジェクトのファイルを開いてアプリケーションのビルドを行います。
 
 1. Unityのサンプルプロジェクトに戻り、Assets/Scenes/Sample01_Lobby.unityを開きます。<br>
 <img width="600" alt="multiplay_sample_scene" src="/Documentation~/Images/multiplay_sample_scene.png">
@@ -127,7 +132,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 
 
 5. "Create a Unity Project id"の中にプルダウンメニューが表示されますので、表示される候補の中から、2-3.で作成したプロジェクトを選択してください。<br/>
-これで作成されたUnity Cloud Projectと紐付けがされ、本サンプルシーンでマルチプレイヤー機能を使うことができます。
+これで作成されたUnity Cloud Projectと紐付けがされ、本サンプルプロジェクトでマルチプレイヤー機能を使うことができます。
 <img width="600" alt="multiplay_sample_ugs_services_selectprj" src="/Documentation~/Images/multiplay_sample_ugs_services_selectprj.png">
    
 6. Build Settings画面に戻り、下部にある「Build」ボタンを押下します。<br>
@@ -135,7 +140,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 <img width="600" alt="multiplay_sample_buildsettings" src="/Documentation~/Images/multiplay_sample_buildsettings.png">
 
 
-## 2-5. サンプルシーンの使い方
+## 2-5. サンプルプロジェクトの使い方
 
 ### ビルドしたアプリケーションの操作方法
 
@@ -198,6 +203,80 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 ④ローディング画面に遷移した後、ゲーム画面に遷移します。プレイヤーは飛んでいるドローンに変身します。
 <img width="600" alt="multiplay_sample_dialog1" src="/Documentation~/Images/multiplay_sample_dialog1.png">
 
+
+# 3. サンプルプロジェクトのカスタマイズ方法
+## 3-1. 3D都市モデルを差し替える方法
+このサンプルプロジェクトでは、例として沼津市の3D都市モデルを配置しています。<br>
+PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域向けにサンプルプロジェクトをカスタマイズすることができます。<br>
+(※浸水区域情報があるモデルについては3D都市モデルの差し替えで情報が反映されますが、浸水区域情報がないモデルを選択すると正しく表示されないのでご注意ください。)
+
+### シーンの構成
+このサンプルプロジェクトでは、Githubのファイル容量の制約上、1シーン当たり100MBを超えないように地物の数を限定しています。<br>
+ランタイムで複数のサブシーンを重ねてロードすることで広域のモデル表示を実現しています。シーンファイルの構成は以下の通りです。<br>
+<img width="600" alt="multiplay_scene_structure" src="/Documentation~/Images/multiplay_scene_structure.png"> <br>
+1. Sample01＿Lobby：マルチプレイの準備、ロビー作成などを行うシーンです。
+2. FloodSimulation ：マルチプレイでロードされるゲームレベルです。その中には地形の航空写真と浸水領域モデルが配置されています。
+3. Buildings 1~5：1シーンあたり100MBを超えないように地物の数を限定しています。この5つのシーンをランライム中に重ねてロードしています。
+
+### サブシーン読み込みの無効化
+3D都市モデルを差し替えて利用される際、サブシーンの分割は不要のため、以下の手順でサブシーンの読み込みを無効化してください。<br>
+`Assets/Scripts/GameLobby/NGO/PlayerCam.cs` 
+を開き、112~115行目の以下のコードを削除してください。<br>
+<img width="600" alt="multiplay_sample_customize_playercam" src="/Documentation~/Images/multiplay_sample_customize_playercam.png"> <br>
+こちらのコードがサブシーンのロードを行う部分なので、削除するとサブシーンがロードされなくなります。
+
+### 3D都市モデルの配置
+FloodSimulationシーンを開き、PLATEAU SDK for Unityを用いて利用したいエリアの3D都市モデルを読み込みます。
+具体的な使い方は[PLATEAU SDK for Unityのマニュアル](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/)をご参照ください。
+
+読み込んだ3D都市モデルを図のようにCesiumGeoreferenceのチャイルドオブジェクトにします。<br>
+<img width="300" alt="multiplay_sample_customize_hierarchy" src="/Documentation~/Images/multiplay_sample_customize_hierarchy.png"> <br>
+
+Cesium Globe Anchorコンポーネントを追加します。<br>
+<img width="300" alt="multiplay_sample_customize_cga" src="/Documentation~/Images/multiplay_sample_customize_cga.png"> <br>
+
+Maps Toolkitを開き、配置した3D都市モデルをアタッチして「PLATEAUモデルの位置を合せる」を選択すると、3D都市モデルの位置が補正されます。<br>
+<img width="600" alt="multiplay_sample_customize_alignment" src="/Documentation~/Images/multiplay_sample_customize_alignment.png"> <br>
+
+Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
+
+## 3-2. 環境の設定変更
+デフォルトでは晴れ・日中の環境に設定されています。<br>
+Rendering Toolkitの環境システムを利用することで天候条件や時間帯を変更することが出来ます。<br>
+メニューからPLATEAU>PLATEAU Toolkit>Rendering Toolkitを開いてください。<br>
+<img width="400" alt="multiplay_customize_renderingmenu" src="/Documentation~/Images/multiplay_customize_renderingmenu.png"> <br>
+
+Time of Dayの値を変更することで時間帯を変更出来ます。<br>
+<img width="600" alt="multiplay_customize_time_dawn" src="/Documentation~/Images/multiplay_customize_time_dawn.png"> 
+<img width="600" alt="multiplay_customize_time_noon" src="/Documentation~/Images/multiplay_customize_time_noon.png"> <br>
+
+Rain/Snow/Cloudy/Fog Color/FogDistanceの値を変更することで天気を調整出来ます。<br>
+<img width="600" alt="multiplay_customize_weather_fog" src="/Documentation~/Images/multiplay_customize_weather_fog.png"> 
+
+環境システムの各設定項目の内容や、具体的な操作方法は[Rendering ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
+
+## 3-3. 夜間用のテクスチャの設定方法
+3-2. 環境の設定変更で時間帯を夜間に設定すると、デフォルトの3D都市モデルでは建物に光源がないため、建物は真っ暗に表示されてしまいます。<br>
+<img width="600" alt="multiplay_customize_time_midnight" src="/Documentation~/Images/multiplay_customize_time_midnight.png"> <br>
+
+そのような場合には、Rendering ToolkitのAuto Texturing機能を使用することで、夜景を再現することが出来ます。<br>
+まず、Auto Textureを適用したい建物を選択します。<br>
+<img width="600" alt="multiplay_customize_select_a_bldg" src="/Documentation~/Images/multiplay_customize_select_a_bldg.png"> <br>
+
+Rendering Toolkitを開いて「テクスチャ生成」を選択すると夜景用のテクスチャが生成されます。<br>
+<img width="600" alt="multiplay_customize_autotexture" src="/Documentation~/Images/multiplay_customize_autotexture.png"> <br>
+
+ヒエラルキー内の全建物を一括選択して反映したい場合は、検索バーで「bldg t:MeshRenderer p(m_IsActive)=true」と検索すると一括でシーン内の建物を選択出来ます*。<br>
+<img width="600" alt="multiplay_customize_select_all_bldgs" src="/Documentation~/Images/multiplay_customize_select_all_bldgs.png"> <br>
+<img width="600" alt="multiplay_customize_select_all_bldgs_light" src="/Documentation~/Images/multiplay_customize_select_all_bldgs_light.png"> <br>
+
+*この検索にはUnity Editor上でのカスタム選択機能が必要となります。カスタム選択機能を使用するには メニュー > Edit > Preferences の SearchタブでSceneの項目をAdvancedに設定する必要があります。<br>
+<img width="600" alt="multiplay_customize_custom_search" src="/Documentation~/Images/multiplay_customize_custom_search.png"> 
+
+Auto Texture適用後、窓の明かりをOFFにしたい場合は対象となる建物を選択し、Rendering Toolkitを開いて「窓の表示の切り替え」を選択してください。<br>
+<img width="600" alt="multiplay_customize_select_a_bldg_dark" src="/Documentation~/Images/multiplay_customize_select_a_bldg_dark.png"> <br>
+
+設定方法の詳細については[Rendering ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
 
 
 # ライセンス
