@@ -1,9 +1,8 @@
 # City Rescue Multi Play
+### PLATEAU-SDK-Toolkits-for-Unityを使ったサンプルプロジェクト
 <img width="1080" alt="cityrescue_kv" src="/Documentation~/Images/cityrescue_kv.png">
 
-### PLATEAU-SDK-Toolkits-for-Unityを使ったサンプルアプリケーション
 
-PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーションの作成方法についてご紹介します。
 
 ### 更新履歴
 
@@ -13,30 +12,40 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 
 # 目次
 
-- [1. サンプルシーンの概要](#1-サンプルシーンの概要)
-    * [1-1. 体験の概要](#1-1-体験の概要)
-    * [1-2. Toolkitsの利用機能](#1-2-Toolkitsの利用機能)
+- [1. サンプルプロジェクトの概要](#1-サンプルプロジェクトの概要)
+  - [1-1. サンプルプロジェクトで体験できること](#1-1-サンプルプロジェクトで体験できること)
+  - [1-2. Unityプロジェクト情報](#1-2-unityプロジェクト情報)
+  - [1-3. 利用している PLATEAU SDK-Toolkits の機能](#1-3-利用している-plateau-sdk-toolkits-の機能)
 - [2. 利用手順](#2-利用手順)
-    * [2-1. 必要環境](#2-1-必要環境)
+    * [2-1. 推奨環境](#2-1-推奨環境)
     * [2-2. Unity Gaming Servicesとは](#2-2-Unity-Gaming-Servicesとは)
     * [2-3. Unity Game Serviceを使うためのプロジェクトセットアップ](#2-3-Unity-Gaming-Servicesを使うためのプロジェクトセットアップ)
-    * [2-4. サンプルシーンのビルド方法](#2-4-サンプルシーンのビルド方法)
-    * [2-5. サンプルシーンの使い方](#2-5-サンプルシーンの使い方)
-- [3. サンプルシーンのカスタマイズ方法](#3-サンプルシーンのカスタマイズ方法)
+    * [2-4. サンプルプロジェクトのビルド方法](#2-4-サンプルプロジェクトのビルド方法)
+    * [2-5. サンプルプロジェクトの使い方](#2-5-サンプルプロジェクトの使い方)
+- [3. サンプルプロジェクトのカスタマイズ方法](#3-サンプルプロジェクトのカスタマイズ方法)
     * [3-1. 3D都市モデルを差し替える方法](#3-1-3D都市モデルを差し替える方法)
     * [3-2. 環境の設定変更](#3-2-環境の設定変更)
     * [3-3. 夜間用テクスチャの設定方法](#3-3-夜間用テクスチャの設定方法)
  
-# 1. サンプルシーンの概要
-## 1-1. 体験の概要
+# 1. サンプルプロジェクトの概要
+## 1-1. サンプルプロジェクトで体験できること
 複数人向けの災害シミュレータを例に取り、PLATEAUの3D都市モデルとマルチプレイ機能を組み合わせることで複数人で同時参加可能なアプリを構築する方法を紹介します。<br/>
-このサンプルシーンは、3D都市モデルのメタデータを参照して洪水のシミュレーションを行い、被害状況や避難計画などを複数人でプランニングする体験となっています。<br/>
-マルチプレイ機能の実装には様々な方法がありますが、このサンプルシーンでは例としてUnity Gaming Servicesを活用しています。<br/>
+このサンプルプロジェクトは、3D都市モデルのメタデータを参照して洪水のシミュレーションを行い、被害状況や避難計画などを複数人でプランニングする体験となっています。<br/>
+マルチプレイ機能の実装には様々な方法がありますが、このサンプルプロジェクトでは例としてUnity Gaming Servicesを活用しています。<br/>
 ロビー機能やボイスチャット、テキストチャットなどマルチプレイに必要な機能を簡単に実装することができます。
 <br/>
 
-## 1-2. 利用しているToolkitsの機能
-このサンプルシーンでは、PLATEAU SDK-Toolkits for Unityの以下の機能を活用しています。
+## 1-2. Unityプロジェクト情報
+### Unity Version
+- Unity 2021.3.30
+
+### Rendering Pipeline
+- HDRP
+
+※Built-in Rendering Pipeline、URPでは動作しません。<br>
+
+## 1-3. 利用している PLATEAU SDK-Toolkits の機能
+このサンプルプロジェクトでは、PLATEAU SDK-Toolkits for Unityの以下の機能を活用しています。
 ### Rendering Toolkit
 - Auto Texturing
 - 環境システム
@@ -47,17 +56,11 @@ PLATEAU-SDK-Toolkits for Unityを用いたマルチプレイアプリケーシ�
 
   
 # 2. 利用手順
-## 2-1. 必要環境
+## 2-1. 推奨環境
 ### OS環境
+以下は本プロジェクトに使用した開発環境です。
 - Windows11
 - macOS Ventura 13.2
-
-### Unity Version
-- Unity 2021.3.30
-
-### Rendering Pipeline
-- HDRP
-    - Built-in Rendering Pipeline、URPでは動作しません。<br>
 
 ### その他
 - Unity Cloud アカウント, Unity Gaming Services
@@ -71,7 +74,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 詳細は以下のドキュメントをご参照ください。<br/>
 [Unity Gaming Services](https://unity.com/solutions/gaming-services)
 
-このサンプルシーンではUnity Gaming Servicesを用いて以下の機能を実装しています。<br/>
+このサンプルプロジェクトではUnity Gaming Servicesを用いて以下の機能を実装しています。<br/>
 - Lobby・ルーム機能
 - チャット・ボイスチャット機能
 
@@ -105,13 +108,13 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 7. プロジェクトに戻り、"Project ID"をコピーします。
  <img width="600" alt="multiplay_sample_projectidcopy" src="/Documentation~/Images/multiplay_sample_projectidcopy.png">
 
-サンプルシーンを利用する前のUnity Gaming Servicesをセットアップする手順は以上です。<br/>
+サンプルプロジェクトを利用する前のUnity Gaming Servicesをセットアップする手順は以上です。<br/>
 
 
 
-## 2-4. サンプルシーンのビルド方法
+## 2-4. サンプルプロジェクトのビルド方法
 
-ここからはUnity Editorでサンプルシーンのファイルを開いてアプリケーションのビルドを行います。
+ここからはUnity Editorでサンプルプロジェクトのファイルを開いてアプリケーションのビルドを行います。
 
 1. Unityのサンプルプロジェクトに戻り、Assets/Scenes/Sample01_Lobby.unityを開きます。<br>
 <img width="600" alt="multiplay_sample_scene" src="/Documentation~/Images/multiplay_sample_scene.png">
@@ -129,7 +132,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 
 
 5. "Create a Unity Project id"の中にプルダウンメニューが表示されますので、表示される候補の中から、2-3.で作成したプロジェクトを選択してください。<br/>
-これで作成されたUnity Cloud Projectと紐付けがされ、本サンプルシーンでマルチプレイヤー機能を使うことができます。
+これで作成されたUnity Cloud Projectと紐付けがされ、本サンプルプロジェクトでマルチプレイヤー機能を使うことができます。
 <img width="600" alt="multiplay_sample_ugs_services_selectprj" src="/Documentation~/Images/multiplay_sample_ugs_services_selectprj.png">
    
 6. Build Settings画面に戻り、下部にある「Build」ボタンを押下します。<br>
@@ -137,7 +140,7 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 <img width="600" alt="multiplay_sample_buildsettings" src="/Documentation~/Images/multiplay_sample_buildsettings.png">
 
 
-## 2-5. サンプルシーンの使い方
+## 2-5. サンプルプロジェクトの使い方
 
 ### ビルドしたアプリケーションの操作方法
 
@@ -201,14 +204,14 @@ Unityが提供する、ゲームの機能開発からローンチ、運用に関
 <img width="600" alt="multiplay_sample_dialog1" src="/Documentation~/Images/multiplay_sample_dialog1.png">
 
 
-# 3. サンプルシーンのカスタマイズ方法
+# 3. サンプルプロジェクトのカスタマイズ方法
 ## 3-1. 3D都市モデルを差し替える方法
-このサンプルシーンでは、例として沼津市の3D都市モデルを配置しています。<br>
-PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域向けにサンプルシーンをカスタマイズすることができます。<br>
+このサンプルプロジェクトでは、例として沼津市の3D都市モデルを配置しています。<br>
+PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域向けにサンプルプロジェクトをカスタマイズすることができます。<br>
 (※浸水区域情報があるモデルについては3D都市モデルの差し替えで情報が反映されますが、浸水区域情報がないモデルを選択すると正しく表示されないのでご注意ください。)
 
 ### シーンの構成
-このサンプルシーンでは、Githubのファイル容量の制約上、1シーン当たり100MBを超えないように地物の数を限定しています。<br>
+このサンプルプロジェクトでは、Githubのファイル容量の制約上、1シーン当たり100MBを超えないように地物の数を限定しています。<br>
 ランタイムで複数のサブシーンを重ねてロードすることで広域のモデル表示を実現しています。シーンファイルの構成は以下の通りです。<br>
 <img width="600" alt="multiplay_scene_structure" src="/Documentation~/Images/multiplay_scene_structure.png"> <br>
 1. Sample01＿Lobby：マルチプレイの準備、ロビー作成などを行うシーンです。
