@@ -247,14 +247,14 @@ Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/P
 
 ### 表示する洪水浸水区域モデルの選択
 選択するエリアによっては、複数の種類の洪水浸水区域モデルが同時にインポートされることがあります。<br>
-デフォルトではインポートされた区域モデルが全て表示されてしまうので、アプリをビルドする前に”_fld_”と表記のあるモデルから表示対象外のモデルを選択して無効化してください。
+デフォルトではインポートされた区域モデルが全て表示されてしまうので、アプリをビルドする前に”_fld_”と表記のあるモデルから表示対象外のモデルを選択して無効化してください。<br>
 <img width="400" alt="multiplay_customize_select_fld" src="/Documentation~/Images/multiplay_customize_select_fld.png"> <br>
 
 また、エリア選択の際に複数のグリッドを跨いで表示エリアを選択すると、浸水区域情報も複数に分割されてインポートされます。その際には必要なグリッドの情報が全て有効化されていることを確認してください。
 
 ### 水マテリアルの適用
 浸水区域に自動的に水のマテリアルが適用されない場合がございます。<br>
-その場合にはAsset/Shaders/Materials/Water.matを洪水浸水区域モデル内の子オブジェクトすべてにアタッチしてください。
+その場合にはAsset/Shaders/Materials/Water.matを洪水浸水区域モデル内の子オブジェクトすべてにアタッチしてください。<br>
 <img width="600" alt="multiplay_customize_attach_water_mat" src="/Documentation~/Images/multiplay_customize_attach_water_mat.png"> <br>
 
 ## 3-2. 環境の設定変更
