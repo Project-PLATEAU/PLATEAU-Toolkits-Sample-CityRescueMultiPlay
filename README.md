@@ -231,7 +231,7 @@ FloodSimulationシーンを開き、PLATEAU SDK for Unityを用いて利用し�
 
 
 なお、読み込みを行う際、浸水区域情報を取得できるよう「災害リスク」の項目を「インポートする」に設定してください。
-<img width="400" alt="multiplay_customize_sdkimport_disaster_risk" src="/Documentation~/Images/multiplay_customize_sdkimport_disaster_risk.png"> <br>
+<img width="400" alt="multiplay_customize_sdkimport_disaster_risk" src="/Documentation~/Images/muliplay_customize_sdkimport_disaster_risk.png"> <br>
 
 読み込んだ3D都市モデルを図のようにCesiumGeoreferenceのチャイルドオブジェクトにします。<br>
 <img width="300" alt="multiplay_sample_customize_hierarchy" src="/Documentation~/Images/multiplay_sample_customize_hierarchy.png"> <br>
