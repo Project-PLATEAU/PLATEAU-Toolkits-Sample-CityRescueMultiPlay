@@ -229,6 +229,10 @@ PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域�
 FloodSimulationシーンを開き、PLATEAU SDK for Unityを用いて利用したいエリアの3D都市モデルを読み込みます。
 具体的な使い方は[PLATEAU SDK for Unityのマニュアル](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/)をご参照ください。
 
+
+なお、読み込みを行う際、浸水区域情報を取得できるよう「災害リスク」の項目を「インポートする」に設定してください。
+<img width="400" alt="multiplay_customize_sdkimport_disaster_risk" src="/Documentation~/Images/multiplay_customize_sdkimport_disaster_risk.png"> <br>
+
 読み込んだ3D都市モデルを図のようにCesiumGeoreferenceのチャイルドオブジェクトにします。<br>
 <img width="300" alt="multiplay_sample_customize_hierarchy" src="/Documentation~/Images/multiplay_sample_customize_hierarchy.png"> <br>
 
@@ -239,6 +243,19 @@ Maps Toolkitを開き、配置した3D都市モデルをアタッチして「PLA
 <img width="600" alt="multiplay_sample_customize_alignment" src="/Documentation~/Images/multiplay_sample_customize_alignment.png"> <br>
 
 Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
+
+
+### 表示する洪水浸水区域モデルの選択
+選択するエリアによっては、複数の種類の洪水浸水区域モデルが同時にインポートされることがあります。<br>
+デフォルトではインポートされた区域モデルが全て表示されてしまうので、アプリをビルドする前に”_fld_”と表記のあるモデルから表示対象外のモデルを選択して無効化してください。
+<img width="400" alt="multiplay_customize_select_fld" src="/Documentation~/Images/multiplay_customize_select_fld.png"> <br>
+
+また、エリア選択の際に複数のグリッドを跨いで表示エリアを選択すると、浸水区域情報も複数に分割されてインポートされます。その際には必要なグリッドの情報が全て有効化されていることを確認してください。
+
+### 水マテリアルの適用
+浸水区域に自動的に水のマテリアルが適用されない場合がございます。<br>
+その場合にはAsset/Shaders/Materials/Water.matを洪水浸水区域モデル内の子オブジェクトすべてにアタッチしてください。
+<img width="600" alt="multiplay_customize_attach_water_mat" src="/Documentation~/Images/multiplay_customize_attach_water_mat.png"> <br>
 
 ## 3-2. 環境の設定変更
 デフォルトでは晴れ・日中の環境に設定されています。<br>
