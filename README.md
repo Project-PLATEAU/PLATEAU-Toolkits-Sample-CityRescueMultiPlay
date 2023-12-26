@@ -241,7 +241,7 @@ PLATEAU SDKを用いて3D都市モデルを読み込むことで、別の地域�
 Maps Toolkitを開き、配置した3D都市モデルを `PLATEAUモデル` に設定して「PLATEAUモデルの位置を合せる」を選択すると、3D都市モデルの位置が補正されます。<br>
 <img width="600" alt="multiplay_sample_customize_alignment" src="/Documentation~/Images/multiplay_sample_customize_alignment.png"> <br>
 
-Maps Toolkitの詳しい使い方は[Maps ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
+Maps Toolkitの詳しい使い方は[Maps Toolkit README](https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity)をご参照ください。
 
 ### 表示する洪水浸水区域モデルの選択
 選択するエリアによっては、複数の種類の洪水浸水区域モデルが同時にインポートされることがあります。<br>
@@ -268,7 +268,7 @@ Rendering Toolkit の環境システムを利用することで天候条件や�
 `Rain` / `Snow` / `Cloudy` / `Fog Color` / `FogDistance` の値を変更することで天気を調整出来ます。<br>
 <img width="600" alt="multiplay_customize_weather_fog" src="/Documentation~/Images/multiplay_customize_weather_fog.png"> 
 
-環境システムの各設定項目の内容や、具体的な操作方法は[Rendering ToolkitのReadme](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
+環境システムの各設定項目の内容や、具体的な操作方法は[Rendering Toolkit README](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering)をご参照ください。
 
 ## 3-3. 夜間用のテクスチャの設定方法
 環境の設定変更で時間帯を夜間に設定すると、デフォルトの3D都市モデルでは建物に光源がないため、建物は真っ暗に表示されてしまいます。<br>
@@ -291,7 +291,7 @@ Rendering Toolkit を開いて「テクスチャ生成」を選択すると夜�
 自動テクスチャ生成後、窓の明かりをOFFにしたい場合は対象となる建物を選択し、Rendering Toolkitを開いて「窓の表示の切り替え」を選択してください。<br>
 <img width="600" alt="multiplay_customize_select_a_bldg_dark" src="/Documentation~/Images/multiplay_customize_select_a_bldg_dark.png"> <br>
 
-設定方法の詳細については [Rendering Toolkit README](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering) をご参照ください。
+設定方法の詳細については [Rendering Toolkit README](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering) をご参照ください。
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
