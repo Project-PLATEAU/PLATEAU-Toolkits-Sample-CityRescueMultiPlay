@@ -6,6 +6,7 @@
 
 | 更新日時 | 更新内容 |
 | :--- | :--- |
+|  2024/4/5  |  City Rescue Multi Play　チュートリアル公開|
 |  2023/12/25  |  City Rescue Multi Play　初回リリース|
 
 # 目次
