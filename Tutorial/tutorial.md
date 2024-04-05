@@ -61,7 +61,7 @@ Cesium for Unity をダウンロードしておきます。 <br>
 # 2. 環境作成
 
 ## 2-1. プロジェクト作成
-Unity Hub からプロジェクトを作成します。Unity Version 2021.3.35F1(LTS) 以降の環境で、3D(HDRP) を選択してプロジェクトを作成します。 <br>
+Unity Hub からプロジェクトを作成します。3D(HDRP) を選択してプロジェクトを作成します。 <br>
 <img width="800" alt="project_creation_hdrp" src="./Images/project_creation_hdrp.png">
 
 ## 2-2. PLATEAU SDK追加
