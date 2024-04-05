@@ -30,6 +30,7 @@
   - [3-1. 3D都市モデルを差し替える方法](#3-1-3d都市モデルを差し替える方法)
   - [3-2. 環境の設定変更](#3-2-環境の設定変更)
   - [3-3. 夜間用のテクスチャの設定方法](#3-3-夜間用のテクスチャの設定方法)
+- [4. サンプルプロジェクトの作成チュートリアル](#4-サンプルプロジェクトの作成チュートリアル)
 - [ライセンス](#ライセンス)
 - [注意事項/利用規約](#注意事項利用規約)
 
@@ -42,6 +43,8 @@
 マルチプレイ機能の実装には様々な方法がありますが、このサンプルプロジェクトでは例としてUnity Gaming Servicesを活用しています。<br/>
 ロビー機能やボイスチャット、テキストチャットなどマルチプレイに必要な機能を簡単に実装することができます。
 <br/>
+
+※このサンプルプロジェクトの主要機能の簡易的な実装例をチュートリアルで紹介しています。実装方法については、[こちら](./Tutorial/tutorial.md)のチュートリアルをご参照ください。
 
 ## 1-2. Unityプロジェクト情報
 ### Unity バージョン
@@ -292,6 +295,9 @@ Rendering Toolkit を開いて「テクスチャ生成」を選択すると夜�
 <img width="600" alt="multiplay_customize_select_a_bldg_dark" src="/Documentation~/Images/multiplay_customize_select_a_bldg_dark.png"> <br>
 
 設定方法の詳細については [Rendering Toolkit README](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Rendering) をご参照ください。
+
+# 5. サンプルプロジェクトの作成チュートリアル
+※このサンプルプロジェクトの主要機能の実装例をチュートリアルで紹介しています。実装方法については、[こちら](./Tutorial/tutorial.md)のチュートリアルをご参照ください。
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
