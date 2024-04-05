@@ -41,7 +41,7 @@ PLATEAU の都市モデルを使ったユースケースでは、都市の様々
 以上の処理を実装することで、PLATEAUの持つ情報活用の基本的なパターンのアプリケーションの開発を学習することができます。 <br>
 
 ## 1-2. 開発環境
-Unity Version 2021.3.27F1(LTS) 以降とVisual Studio <br>
+Unity Version 2021.3.35F1(LTS) 以降とVisual Studio <br>
 PLATEAU SDK for Unity <br>
 PLATEAU SDK toolkit for Unity <br>
 - Rendering Toolkit ： 都市環境の再現
@@ -51,17 +51,17 @@ Cesium for Unity ：Maps Toolkit と併用して使用 <br>
 
 ## 1-3. 準備
 Unityの開発環境を整えます。 <br>
-PLATEAU SDK for Unity をダウンロードしておきます。（第1章【2】参照） <br>
-PLATEAU SDK Toolkit for Unity をダウンロードしておきます。（第3章【1】参照） <br>
+PLATEAU SDK for Unity をダウンロードしておきます。（[2-2. PLATEAU SDKの追加](#2-2-PLATEAUSDKの追加)） <br>
+PLATEAU SDK Toolkit for Unity をダウンロードしておきます。（[インストール方法](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity?tab=readme-ov-file#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)） <br>
 Maps Toolkit をダウンロードしておきます。 <br>
 Cesium for Unity をダウンロードしておきます。 <br>
-使用する画像を準備しておきます。（第2章【3】参照） <br>
+
 
 
 # 2. 環境作成
 
 ## 2-1. プロジェクト作成
-Unity Hub からプロジェクトを作成します。Unity Version 2021.3.27F1(LTS) 以降の環境で、3D(HDRP) を選択してプロジェクトを作成します。 <br>
+Unity Hub からプロジェクトを作成します。Unity Version 2021.3.35F1(LTS) 以降の環境で、3D(HDRP) を選択してプロジェクトを作成します。 <br>
 <img width="800" alt="project_creation_hdrp" src="./Images/project_creation_hdrp.png">
 
 ## 2-2. PLATEAU SDK追加
