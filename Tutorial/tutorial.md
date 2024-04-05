@@ -77,7 +77,7 @@ https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.
 ## 2-4. 視点移動機能の追加
 マウスの右クリック&ドラッグで視点方向を、キーボードのASDWQEキーで前後左右、そして上下方向の移動する機能を実装します。 <br>
 Hierarchy パネルから MainCameraを選択します。Inspector パネルで、Add Conponet を押して、CameraController と入力し、そのまま NewScript を選択、続けてCreate and Add を選択してスクリプトを作成します。 <br>
-<img width="500" alt="cameracontroller" src="./Images/cameracontroller.png">
+<img width="500" alt="cameracontroller" src="./Images/cameracontroller.png"> <br>
 <img width="500" alt="cameracontroller_script" src="./Images/cameracontroller_script.png">
  
  Camera Controller が追加されたら、CameraController 名部分をダブルクリックしてコード作成に入ります。 <br>
