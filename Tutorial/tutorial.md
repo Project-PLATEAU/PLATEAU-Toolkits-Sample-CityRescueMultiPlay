@@ -127,11 +127,14 @@ public class CameraController : MonoBehaviour
     [SerializeField] float m_MoveSpeed = 100.0f;
     float m_RotationX = 0.0f;
     float m_RotationY = 0.0f;
-　　　　：
+
+    // 中略
+
     // Update is called once per frame
     void Update()
     {
-　　　　　：
+　　　　　// 中略
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 movement =
@@ -153,7 +156,8 @@ public class CameraController : MonoBehaviour
 ```C#
     void Update()
     {
-　　　　　：
+        // 中略
+
         if (Input.GetKey(KeyCode.Q))
             transform.Translate(Vector3.down * m_MoveSpeed * Time.deltaTime);
         if (Input.GetKey(KeyCode.E))
@@ -422,7 +426,7 @@ public class TouchMessage : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-　　　：
+
 ```
 
 色の塗り分けは建物を選択したところで処理します。 <br>
@@ -436,11 +440,12 @@ public class TouchMessage : MonoBehaviour
 ```C#
     void Update()
     {
-　　　　：
+　　　　// 中略
+
             //ヒットしたオブジェクトをひとつずつ確認
             foreach (RaycastHit hit in hitsFromOwnClick)
             {
-　　　　：
+　　　　// 中略
                     //3. PLATEAUの都市モデルのビルのモデルのみを抽出
                     var firstPrimaryObj = cityObjectGroup.PrimaryCityObjects.FirstOrDefault();
                     if (firstPrimaryObj != null && 
@@ -466,7 +471,7 @@ public class TouchMessage : MonoBehaviour
 ```C#
     void Update()
     {
-　　　　：
+　　　　// 中略
         if (Input.GetMouseButtonDown(0))
         {
             //前の選択オブジェクトを元のマテリアルに戻す
@@ -478,7 +483,6 @@ public class TouchMessage : MonoBehaviour
             }
 
             //1. マウスクリックしたところでヒットするオブジェクトを抽出
-　　　　　　　:
  ```
 
 
